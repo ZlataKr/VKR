@@ -1,0 +1,36 @@
+digraph Tree {
+node [shape=box, style="filled", color="black"] ;
+0 [label="СЕМЕЙНЫЙ СТАТУС <= 0.5\ngini = 0.151\nsamples = 499\nvalue = [41, 458]", fillcolor="#4ba6e7"] ;
+1 [label="gini = 0.0\nsamples = 241\nvalue = [0, 241]", fillcolor="#399de5"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="КОЛИЧЕСТВО ДЕТЕЙ <= 3.5\ngini = 0.267\nsamples = 258\nvalue = [41, 217]", fillcolor="#5eb0ea"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+3 [label="EXT-3 <= 0.401\ngini = 0.409\nsamples = 143\nvalue = [41, 102]", fillcolor="#89c4ef"] ;
+2 -> 3 ;
+4 [label="gini = 0.0\nsamples = 64\nvalue = [0, 64]", fillcolor="#399de5"] ;
+3 -> 4 ;
+5 [label="EXT-3 <= 0.806\ngini = 0.499\nsamples = 79\nvalue = [41, 38]", fillcolor="#fdf6f1"] ;
+3 -> 5 ;
+6 [label="ВОЗРАСТ <= 22.5\ngini = 0.366\nsamples = 54\nvalue = [41, 13]", fillcolor="#eda978"] ;
+5 -> 6 ;
+7 [label="gini = 0.0\nsamples = 7\nvalue = [0, 7]", fillcolor="#399de5"] ;
+6 -> 7 ;
+8 [label="ЗП <= 20473.5\ngini = 0.223\nsamples = 47\nvalue = [41, 6]", fillcolor="#e99356"] ;
+6 -> 8 ;
+9 [label="gini = 0.0\nsamples = 4\nvalue = [0, 4]", fillcolor="#399de5"] ;
+8 -> 9 ;
+10 [label="ТИП ЗАЙМА <= 0.5\ngini = 0.089\nsamples = 43\nvalue = [41, 2]", fillcolor="#e68743"] ;
+8 -> 10 ;
+11 [label="ВОЗРАСТ <= 63.5\ngini = 0.046\nsamples = 42\nvalue = [41, 1]", fillcolor="#e6843e"] ;
+10 -> 11 ;
+12 [label="gini = 0.0\nsamples = 41\nvalue = [41, 0]", fillcolor="#e58139"] ;
+11 -> 12 ;
+13 [label="gini = 0.0\nsamples = 1\nvalue = [0, 1]", fillcolor="#399de5"] ;
+11 -> 13 ;
+14 [label="gini = 0.0\nsamples = 1\nvalue = [0, 1]", fillcolor="#399de5"] ;
+10 -> 14 ;
+15 [label="gini = 0.0\nsamples = 25\nvalue = [0, 25]", fillcolor="#399de5"] ;
+5 -> 15 ;
+16 [label="gini = 0.0\nsamples = 115\nvalue = [0, 115]", fillcolor="#399de5"] ;
+2 -> 16 ;
+}
